@@ -16,7 +16,7 @@
 }
 
 html {
-	min-width: 320px;
+	min-width: 0;
 	background: var(--menta-claro);
 }
 
@@ -577,6 +577,12 @@ h1 span {
 	}
 }
 
+@media (max-width: 900px) {
+	.apresentacao {
+		grid-template-columns: minmax(0, 1fr);
+	}
+}
+
 @media (max-width: 760px) {
 	.menu-navegacao,
 	.apresentacao {
@@ -590,10 +596,6 @@ h1 span {
 	.links-navegacao {
 		gap: 17px;
 		font-size: 12px;
-	}
-
-	.links-navegacao a:nth-child(2) {
-		display: none;
 	}
 
 	.links-navegacao .link-contato {
@@ -653,7 +655,24 @@ h1 span {
 	}
 
 	.links-navegacao {
-		gap: 0;
+		width: 100%;
+		justify-content: space-between;
+		gap: 8px;
+		font-size: 11px;
+	}
+
+	.menu-navegacao {
+		min-height: auto;
+		align-items: flex-start;
+		flex-direction: column;
+		justify-content: flex-start;
+		gap: 6px;
+		padding: 12px 0;
+	}
+
+	.links-navegacao .link-contato {
+		min-height: 36px;
+		padding: 0 10px;
 	}
 
 	.apresentacao {
