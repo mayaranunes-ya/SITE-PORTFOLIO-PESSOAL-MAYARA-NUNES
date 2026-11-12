@@ -196,11 +196,19 @@ h1 span {
 	color: var(--oliva-escuro);
 }
 
-.contato-numero {
-	color: #9a806d;
-	font-family: Georgia, "Times New Roman", serif;
-	font-size: 13px;
-	font-style: italic;
+.contato-icone {
+	width: 25px;
+	height: 25px;
+	display: grid;
+	place-items: center;
+	color: var(--oliva-claro);
+}
+
+.contato-icone svg {
+	width: 21px;
+	height: 21px;
+	display: block;
+	fill: currentColor;
 }
 
 .contato-detalhe {
